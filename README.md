@@ -40,13 +40,13 @@ df %>%
   group_by(issuer) %>%
   summarise(count=n()) %>%
   ggplot() +
-  geom_col(aes(x=reorder(issuer, count), y=count)) +
-             coord_flip() +
-  theme_minimal() +
-  labs(
-    title="Press Releases by Source, Jan 2019 - Sept 2020",
-    x=NULL, y = NULL
-  )
+    geom_col(aes(x=reorder(issuer, count), y=count)) +
+    coord_flip() +
+    theme_minimal() +
+    labs(
+      title="Press Releases by Source, Jan 2019 - Sept 2020",
+      x=NULL, y = NULL
+    )
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
